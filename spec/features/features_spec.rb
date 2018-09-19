@@ -1,6 +1,9 @@
  feature Battle do
-   scenario 'Can run app and check page content' do
+   scenario 'Asks players for their names' do
       visit ('/')
-      expect(page).to have_content 'Testing infrastructure working!'
+      fill_in 'player1', with: 'Ayo'
+      fill_in 'player2', with: 'Marianne'
+      click_button 'Submit'
+      expect(page).to have_content "Battle Begin: Ayo vs Marianne"
   end
 end

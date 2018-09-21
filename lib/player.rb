@@ -6,7 +6,7 @@ class Player
     @health = 100
   end
 
-  def hit(points)
-    @health -= points
+  def hit
+    @health -= 10
   end
 end

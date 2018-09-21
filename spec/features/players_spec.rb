@@ -7,7 +7,7 @@ describe Player do
   end
 
   it 'should remove 10 HP from player 2' do
-    player.hit(10)
+    player.hit
     expect(player.health).to eq 90
   end
 end

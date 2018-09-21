@@ -13,6 +13,6 @@
   scenario 'cause player 2 pain!' do
     sign_in_and_play
     click_button 'AttackP2'
-    expect(page). to have_content "Ayo HP: 100 vs Marianne HP: 80"
+    expect(page).to have_content "Ayo HP: 100 vs Marianne HP: 90"
   end
 end
